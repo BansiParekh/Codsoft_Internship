@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfO3m70wwEZE5dokQk5y_g1mUT5iBlVeGoJw&usqp=CAU" class="logo">
+            <ul>
+                <li><a href="#header">home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Project</a></li>
+                 <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div  class="header-text">
+            <p>Web Developer</p>
+            <h1>Hello, I'm <span>Bansi</span><br>Parekh</h1>
+        </div>
+    </div>
+ </div>    
+ <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="/photos/WhatsApp Image 2023-08-24 at 10.52.04 PM.jpeg">
+            </div>
+       
+        <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm a Web Developer. I just fresher for in field of Coding.
+               I want to be perfect in every way for being perfect Developer.
+               We should learnt , innovate and Discover many things and also in life.
+               Let's learn together and change future with Smiles :).  
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                <li><span>Graphic Designer</span><br>Designing Web</li>
+                <li><span>Web Developer</span><br>Web Designing</li>
+                <li><span>App Designer</span><br>App\Web interfaces</li>
+            </ul>
+            </div>
+            <div class="tab-contents " id="experience">
+                <ul>
+                <li><span>2022 - current</span><br>Studing in GPG</li>
+                <li><span>2021 - 2022</span><br>Complete 10th Standard</li>
+                <li><span>2020 - 2021</span><br>online classes</li>
+            </ul>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="worklist">
+            <div class="list">
+            <img src="/photos/landing page.jpg">
+            <h3>Landing Page</h3>
+            <p>This is my first work on web development.<br>I build reposinve Page</p>
+        </div>
+        <div class="list">
+            <img src="/photos/portfolio.jpg">
+            <h3>Portfolio</h3>
+            <p>Portfolio is description of myself.And also<br>show my achivements.</p>
+        </div>
+    </div>
+    <a href="#" class="bnt">See More</a>
+    </div>
+ </div>
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contacts">
+                <h1 class="sub-title">Contact Me</h1>
+                <p ><i class="fa fa-paper-plane"></i>bp4857896@gmail.com</p>
+                <p><i class="fa fa-phone-square"></i>9756464645</p>
+                <div class="socialicons">
+                    <a href=""><i class="fa fa-facebook-square"></i></a>
+                    <a href=""> <i class="fa fa-twitter-square"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+                <a href="/photos/Pink Simple Profile Resume.pdf"download class="btn bnt2">Download CV</a>
+            </div>
+
+        </div>
+    </div>
+ </div>
+ <div class="copy">
+    <p> © All Copyright. Made with <i class="fa fa-heart"></i> B@nsi </p>
+ </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+       for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab"); 
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+    }  
+</script>
+</body>
+</html>

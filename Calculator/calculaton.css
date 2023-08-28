@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#a9a9a9;
+
+}
+.calc{
+    position: relative;
+    max-width: 300px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 30px 40px 50px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.601);
+}
+.display{
+    height: 50px;
+    width: 220px;
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.btn{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.btn button{
+    padding: 10px 7px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.btn1 button{
+    height: 40px;
+    width: 55px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.operator{
+      background-color: gray;
+}
+
